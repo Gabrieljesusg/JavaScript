@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meu primeiro Script</title>
+
+        <style>
+            body {
+                background-color: blue;
+                color: #fff;
+                font-family: arial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Olá, Mundo!</h1>
+        <p>já me livrei da maldição</p>
+
+        <script>
+            // o window.prompt retorna para o sistema como um string
+            var n1 = Number.parseInt(window.prompt("Digite um número: ")); //string
+            var n2 = Number.parseInt(
+                window.prompt("Digite um segundo número: ")
+            ); //string
+
+            var s = n1 + n2; // para que seja somado, devemos converter o valor das variáveis para number
+
+            window.alert("A soma dos números é " + s); //concatenação
+
+            // (number + number) para adição
+            // (string + string) para concatenação
+            // Number.parseInt(n) para tranformar a varialvel em número interiro
+            // Number.parceFloat(n) para transformar a variável em número Real
+            // Number(n) onde o programa identifica automáticamente se o valor é inteiro ou Real.
+        </script>
+    </body>
+</html>
