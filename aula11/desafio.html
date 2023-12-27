@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>desafio do estrangeiro</title>
+</head>
+<body>
+
+  <h1>DESAFIO NACIONALIDADE</h1>
+
+ Sua Nacionalidade é ?<input type="text" name="txt" id="txt" >
+ <input type="button" value="Enviar" onclick="analisar()">
+
+ <div id="res">
+  Você é 
+ </div>
+
+ <script>
+
+  function analisar(){
+
+    var a = document.getElementById('txt')
+    var res = document.getElementById('res')
+    var r = (a.value)
+    
+    // if ( r != 'Brasileiro' ){
+     // res.innerHTML = `Você é estrangeiro`
+    //} else{ ( r == 'Brasileiro')
+    //  res.innerHTML = `Você é Brasileiro`
+    //}
+
+    if ( r == 'Brasileiro'){
+      res.innerHTML = `Você é Brasileiro`
+    } else {
+      res.innerHTML = `Você é estrangeiro`
+    }
+
+  }
+
+ </script>
+  
+</body>
+</html>
