@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meu primeiro Script</title>
+
+        <style>
+            body {
+                background-color: blue;
+                color: #fff;
+                font-family: arial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Olá, Mundo!</h1>
+        <p>já me livrei da maldição</p>
+
+        <script>
+            
+          var n1 = Number(window.prompt('Digite um Número')); //convertendo o valor do prompt que retorna como uma string para um numero inteiro
+          var n2 = Number(window.prompt('Digite um segundo Número')); //convertendo o valor do prompt que retorna como uma string para um numero inteiro
+          var soma = n1 + n2;
+
+          window.alert(`A soma de ${n1} e ${n2} é ${soma}`)
+          // String(soma) ou soma.toString(). para conversão para string
+            // O window.prompt retorna o valor como uma string
+            // O sinal de (+) serve para adição e também para concatenação
+            // Para adição (number + number)
+            // Para Concatenação (string + string)
+
+            // Conversão de string para Number
+            // Usamos Number.parseInt(n) para números inteiros
+            // Usamos Number.parseFloat(n) para números reais, (com vírgula)
+            // Usamos Number(n) para que o sistema reconheça o valor do numero, seja real ou inteiro diretamente sem especificar 
+
+            // Conversão de Number para String
+            // Usamos String(n)
+            // n.toString()
+
+        </script>
+    </body>
+</html>
