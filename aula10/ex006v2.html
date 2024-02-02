@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos Dom</title>
+  <style>
+    #area{
+      background-color: green;
+      color: white;
+      height: 250px;
+      width: 250px;
+      line-height: 250px;
+      text-align: center;
+      font-family: arial;
+      font-weight: 600;
+      
+    }
+  </style>
+</head>
+<body>
+  <div id="area">
+    Interaja...
+  </div>
+
+  <script>
+    var a = window.document.getElementById('area')
+    a.addEventListener('click',clicar)
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', sair) //detecção pelo Js dos eventos Dom na pagina, para evitar de declarar as funções diretamente no código HTML
+    function clicar(){
+      
+      a.innerText = 'Clicou!'
+      a.style.background = 'blue'
+    }
+    function entrar (){
+      a.innerText = 'Entrou!'
+      a.style.background = 'red'
+
+    }
+    function sair(){
+      a.innerText = 'Saiu!'
+      a.style.background = 'green'
+    }
+  </script>
+</body>
+</html>
