@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESAFIO ESTRANGEIRO SITE </title>
+</head>
+<body>
+  <h1>Qual é a sua Nacionalidade?</h1>
+  <input type="text" id="nac">
+  <input type="button" value="Enviar" onclick="verificar()">
+  <br>
+  
+  <var id="res">
+
+  </var>
+
+  <script>
+    function verificar(){
+    var nacio = document.getElementById('nac')
+    var txt = (nac.value)
+    var res = document.getElementById('res')
+    res.innerHTML = `Sua Nacionalidade é ${txt}` 
+    if (txt != 'Brasileiro'){
+      res.innerHTML += ` você é Estrangeiro`
+    } else {
+      res.innerHTML += ` você é cpx`
+    }
+}
+
+  </script>
+
+  
+</body>
+</html>
