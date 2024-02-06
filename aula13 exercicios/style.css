@@ -16,6 +16,10 @@ header{
  color: #fff;
 }
 
+h1{
+  text-align: center;
+  margin: 15px auto;
+}
 section{
 
   background-color: #fff;
@@ -33,4 +37,10 @@ footer{
   text-align: center;
   font-style: italic;
 
+}
+
+img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
 }
